@@ -27,5 +27,5 @@ python ppo_temp_cost_reward_noPred.py
 ```
 
 ```bash
-python ppo_cost_reward_mult_treat_conformal.py
+python ppo_cost_reward_conformal.py
 ```
