@@ -1,0 +1,42 @@
+from gym.envs.registration import register
+
+register(
+    id='threshold-intra_process-action0-v0',
+    entry_point='envs:ActionOEnv',
+)
+register(
+    id='threshold-intra_process-action1-v0',
+    entry_point='envs:Action1Env',
+)
+register(
+    id='master-state-master-reward-v0',
+    entry_point='envs:MasterStateMasterReward',
+)
+register(
+    id='state-with-TE-interval-v0',
+    entry_point='envs:StatewithTEinterval',
+)
+register(
+    id='state-baseline-adapted-v0',
+    entry_point='envs:StateBaselineAdapted',
+)
+register(
+    id='state-with-temporal-features-v0',
+    entry_point='envs:StatewithTemporalFeatures',
+)
+register(
+    id='state-with-temporal-cost-reward-v0',
+    entry_point='envs:StatewithTempCostReward',
+)
+register(
+    id='state-cost-reward-mult-treat-v0',
+    entry_point='envs:StateCostRewardMultTreat',
+)
+register(
+    id='state-with-temporal-cost-reward-withoutpred-v0',
+    entry_point='envs:StatewithTempCostRewardwithoutPred',
+)
+register(
+    id='state-with-temporal-cost-reward-conformal-v0',
+    entry_point='envs:StatewithTempCostRewardConformal',
+)
