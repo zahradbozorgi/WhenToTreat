@@ -2,19 +2,30 @@
  
 
 ## Instructions
-The scripts that you need are the RL folder. Specifically you will need to run the following scripts:
-
+To train the causal forest model, execute the following script:
 
 ```bash
-python ppo_baseline_adapted.py
+python experiments/wtt_experiment.py
+```
+
+and the following for training the predictive model:
+
+```bash
+python experiments/pred_experiment.py
+```
+
+After training the predictive model, load the results to the Jupyter notebook below and execute the cells.
+
+```bash
+conformal_prediction.ipynb
+```
+
+The scripts for running the policy learning experiments are the following:
+
+```bash
+python ppo_temp_cost_reward_noPred.py
 ```
 
 ```bash
-python ppo_temp_cost_reward.py
+python ppo_cost_reward_mult_treat_conformal.py
 ```
-
-```bash
-python ppo_cost_reward_mult_treat.py
-```
-
-Another file that you might need to look at is `baselineEnv.py`, which has the base class for the environment. 
